@@ -1,0 +1,9 @@
+com/examportal/model/Exam.class
+com/examportal/dao/ExamDAO.class
+com/examportal/dao/StudentDAO.class
+com/examportal/util/DBUtil.class
+com/examportal/servlet/MarkListServlet.class
+com/examportal/model/Question.class
+com/examportal/model/ExamResult.class
+com/examportal/model/Student.class
+com/examportal/servlet/ExamServlet.class

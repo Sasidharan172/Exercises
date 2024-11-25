@@ -1,0 +1,9 @@
+/Users/sasidharana/Desktop/Programs/college/Sem_5/Web_Technologies/Exercises/Ex_6/online-exam-system/src/main/java/com/examportal/dao/ExamDAO.java
+/Users/sasidharana/Desktop/Programs/college/Sem_5/Web_Technologies/Exercises/Ex_6/online-exam-system/src/main/java/com/examportal/dao/StudentDAO.java
+/Users/sasidharana/Desktop/Programs/college/Sem_5/Web_Technologies/Exercises/Ex_6/online-exam-system/src/main/java/com/examportal/model/Exam.java
+/Users/sasidharana/Desktop/Programs/college/Sem_5/Web_Technologies/Exercises/Ex_6/online-exam-system/src/main/java/com/examportal/model/ExamResult.java
+/Users/sasidharana/Desktop/Programs/college/Sem_5/Web_Technologies/Exercises/Ex_6/online-exam-system/src/main/java/com/examportal/model/Question.java
+/Users/sasidharana/Desktop/Programs/college/Sem_5/Web_Technologies/Exercises/Ex_6/online-exam-system/src/main/java/com/examportal/model/Student.java
+/Users/sasidharana/Desktop/Programs/college/Sem_5/Web_Technologies/Exercises/Ex_6/online-exam-system/src/main/java/com/examportal/servlet/ExamServlet.java
+/Users/sasidharana/Desktop/Programs/college/Sem_5/Web_Technologies/Exercises/Ex_6/online-exam-system/src/main/java/com/examportal/servlet/MarkListServlet.java
+/Users/sasidharana/Desktop/Programs/college/Sem_5/Web_Technologies/Exercises/Ex_6/online-exam-system/src/main/java/com/examportal/util/DBUtil.java

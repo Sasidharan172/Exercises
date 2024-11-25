@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Styling Methods</title>
+  <!-- External CSS -->
+  <link rel="stylesheet"
+    href="data:text/css;base64,LmV4dGVybmFsLWNzcyB7CiAgICBiYWNrZ3JvdW5kOiAjZTc0YzNjOwogICAgY29sb3I6IHdoaXRlOwogICAgcGFkZGluZzogMjBweDsKICAgIG1hcmdpbjogMjBweCAwOwogICAgYm9yZGVyLXJhZGl1czogOHB4Owp9">
+  <!-- Internal CSS -->
+  <style>
+    /* Basic Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    /* Styling Method Containers */
+    .styling-method {
+      border: 2px solid #333;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .method-title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .internal-css {
+      background: #3498db;
+      color: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    /* Method Indicators */
+    .method-indicator {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 0.8em;
+      margin-bottom: 10px;
+    }
+
+    .external-indicator {
+      background: #e74c3c;
+      color: white;
+    }
+
+    .internal-indicator {
+      background: #3498db;
+      color: white;
+    }
+
+    .inline-indicator {
+      background: #2ecc71;
+      color: white;
+    }
+
+    /* Comparison Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: white;
+    }
+
+    th,
+    td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background: #2c3e50;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    /* Code Examples */
+    .code-example {
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 15px;
+      border-radius: 4px;
+      font-family: monospace;
+      margin: 10px 0;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSS Styling Methods Demonstration</h1>
+
+  <!-- External CSS Example -->
+  <div class="styling-method">
+    <span class="method-indicator external-indicator">External CSS</span>
+    <div class="method-title">External CSS Example</div>
+    <div class="external-css">
+      This box is styled using external CSS (simulated using data URL)
+    </div>
+    <div class="code-example">
+      /* external-styles.css */
+      .external-css {
+      background: #e74c3c;
+      color: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      }</div>
+  </div>
+
+  <!-- Internal CSS Example -->
+  <div class="styling-method">
+    <span class="method-indicator internal-indicator">Internal CSS</span>
+    <div class="method-title">Internal CSS Example</div>
+    <div class="internal-css">
+      This box is styled using internal CSS (defined in style tag)
+    </div>
+    <div class="code-example">
+      &lt;style&gt;
+      .internal-css {
+      background: #3498db;
+      color: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      }
+      &lt;/style&gt;</div>
+  </div>
+
+  <!-- Inline CSS Example -->
+  <div class="styling-method">
+    <span class="method-indicator inline-indicator">Inline CSS</span>
+    <div class="method-title">Inline CSS Example</div>
+    <div style="background: #2ecc71; color: white; padding: 20px; margin: 20px 0; border-radius: 8px;">
+      This box is styled using inline CSS (style attribute)
+    </div>
+    <div class="code-example">
+      &lt;div style="background: #2ecc71; color: white; padding: 20px; margin: 20px 0; border-radius: 8px;"&gt;
+      This box is styled using inline CSS
+      &lt;/div&gt;</div>
+  </div>
+
+  <!-- Comparison Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>CSS Method</th>
+        <th>Pros</th>
+        <th>Cons</th>
+        <th>Best Used For</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>External CSS</td>
+        <td>
+          - Separation of concerns<br>
+          - Better caching<br>
+          - Easy maintenance<br>
+          - Reusable across pages
+        </td>
+        <td>
+          - Additional HTTP request<br>
+          - May delay page rendering
+        </td>
+        <td>
+          - Large websites<br>
+          - Multiple pages<br>
+          - Consistent styling
+        </td>
+      </tr>
+      <tr>
+        <td>Internal CSS</td>
+        <td>
+          - No external files<br>
+          - Page-specific styles<br>
+          - Quick to implement
+        </td>
+        <td>
+          - Increases page size<br>
+          - Not reusable across pages<br>
+          - Mixing content with styles
+        </td>
+        <td>
+          - Single-page websites<br>
+          - Quick prototypes<br>
+          - Page-specific styles
+        </td>
+      </tr>
+      <tr>
+        <td>Inline CSS</td>
+        <td>
+          - Highest specificity<br>
+          - Quick fixes<br>
+          - Element-specific styling
+        </td>
+        <td>
+          - Hard to maintain<br>
+          - Mixes content with styles<br>
+          - No reusability
+        </td>
+        <td>
+          - Quick fixes<br>
+          - Email templates<br>
+          - Dynamic styles
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
